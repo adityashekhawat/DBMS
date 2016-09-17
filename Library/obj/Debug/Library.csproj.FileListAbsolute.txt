@@ -1,0 +1,16 @@
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\bin\Debug\Library.exe.config
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.LoginPage.resources
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.Properties.Resources.resources
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\bin\Debug\Library.exe
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\bin\Debug\Library.pdb
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.exe
+c:\users\aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.pdb
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.Actions.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.AddBooks.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.Category.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.ChangePassword.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.RegisterUser.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.ReturnBooks.resources
+C:\Users\Aditya\documents\visual studio 2015\Projects\Library\Library\obj\Debug\Library.SearchBooks.resources
