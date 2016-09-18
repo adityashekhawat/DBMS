@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtViewCat = new System.Windows.Forms.TextBox();
             this.lblViewCat = new System.Windows.Forms.Label();
@@ -46,14 +47,19 @@
             this.txtAuthor = new System.Windows.Forms.TextBox();
             this.lblQty = new System.Windows.Forms.Label();
             this.cmbCat = new System.Windows.Forms.ComboBox();
+            this.libcategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryDBDataSet = new Library.LibraryDBDataSet();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblcat = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAction = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.lib_categoryTableAdapter = new Library.LibraryDBDataSetTableAdapters.lib_categoryTableAdapter();
             this.grpRemove.SuspendLayout();
             this.grpAdd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.libcategoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRemove
@@ -216,11 +222,25 @@
             // 
             // cmbCat
             // 
+            this.cmbCat.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.libcategoryBindingSource, "book_category", true));
+            this.cmbCat.DataSource = this.libcategoryBindingSource;
+            this.cmbCat.DisplayMember = "book_category";
             this.cmbCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCat.Location = new System.Drawing.Point(160, 101);
             this.cmbCat.Name = "cmbCat";
             this.cmbCat.Size = new System.Drawing.Size(176, 21);
             this.cmbCat.TabIndex = 5;
+            this.cmbCat.ValueMember = "book_category";
+            // 
+            // libcategoryBindingSource
+            // 
+            this.libcategoryBindingSource.DataMember = "lib_category";
+            this.libcategoryBindingSource.DataSource = this.libraryDBDataSet;
+            // 
+            // libraryDBDataSet
+            // 
+            this.libraryDBDataSet.DataSetName = "LibraryDBDataSet";
+            this.libraryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblTitle
             // 
@@ -276,6 +296,10 @@
             this.btnAdd.Text = "&Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // lib_categoryTableAdapter
+            // 
+            this.lib_categoryTableAdapter.ClearBeforeFill = true;
+            // 
             // AddBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,10 +313,13 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "AddBooks";
             this.Text = "AddBooks";
+            this.Load += new System.EventHandler(this.AddBooks_Load);
             this.grpRemove.ResumeLayout(false);
             this.grpRemove.PerformLayout();
             this.grpAdd.ResumeLayout(false);
             this.grpAdd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.libcategoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,5 +350,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAction;
         private System.Windows.Forms.Button btnAdd;
+        private LibraryDBDataSet libraryDBDataSet;
+        private System.Windows.Forms.BindingSource libcategoryBindingSource;
+        private LibraryDBDataSetTableAdapters.lib_categoryTableAdapter lib_categoryTableAdapter;
     }
 }

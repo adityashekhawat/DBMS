@@ -43,6 +43,7 @@
             this.btnAdd.Size = new System.Drawing.Size(72, 24);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "&Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnExit
             // 

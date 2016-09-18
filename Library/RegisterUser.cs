@@ -21,7 +21,7 @@ namespace Library
         {
             this.Close();
             this.Dispose();
-            Actions frmLogin = new Actions();
+            LoginPage frmLogin = new LoginPage();
             frmLogin.Show();
         }
 
